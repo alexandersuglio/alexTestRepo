@@ -1,6 +1,5 @@
-
+//tests is js file is properly connected to index.html
 console.log("nice");
-
 
 var bodyparser = require('body-parser');
 var port = process.env.PORT || 8080;
@@ -13,15 +12,12 @@ var path = require('path');
 
 app.use(express.urlencoded());
 
+//lets us include files from public folder
 app.use(express.static('public'));
 
+var router = require("../routes/routes.js");
 
-// view landing page at http://localhost:8080
-app.get('/', function(req, res) {
-   res.sendFile(path.join(__dirname + '/index.html'));
-});
-
-
+app.use("/", router);
 
 
 app.listen(port, function() { console.log("All systems go! App running on localhost " + port) });
@@ -31,23 +27,6 @@ app.listen(port, function() { console.log("All systems go! App running on localh
 
 
 
-
-
-
-
-
-
-// //post to API
-// app.post('/submitted', function(req, res) {
-
-//     var name = req.body.name;
-//     var email = req.body.email;
-
-//      console.log("name entered: " + name);
-//      console.log("email entered " + email);
-
-//     res.sendFile(path.join(__dirname + '/success.html'));
-// });
 
 
 // ///////////////
