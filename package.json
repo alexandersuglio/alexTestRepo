@@ -1,0 +1,26 @@
+{
+  "name": "alextestrepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "firebase": "^7.14.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandersuglio/alexTestRepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandersuglio/alexTestRepo/issues"
+  },
+  "homepage": "https://github.com/alexandersuglio/alexTestRepo#readme"
+}
